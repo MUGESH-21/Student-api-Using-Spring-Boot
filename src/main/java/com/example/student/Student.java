@@ -21,17 +21,15 @@ public class Student {
     @Column(unique = true, nullable = false)
     private String email;
 
-    // ✅ Required by JPA (Hibernate)
+
     public Student() {
     }
 
-    // Your own constructor
     public Student(String name, String email) {
         this.name = name;
         this.email = email;
     }
 
-    // Getters & Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
